@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='segundo.css'>
+    <title>Adventure Time</title>
+</head>
+
+<body>
+
+    <header id='header'>
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+<section>
+    <h2 id='text'><span>It's time for a new</span><br>Adventure!</h2>
+    
+    <img src="floresta.png" id="floresta">
+    <a href="#" id="btn">Explore</a>
+    <img src="penhasco.png" id="penhasco">
+    <img src="mar.png" id="mar">
+</section>
+
+<div class="sec">
+    <h2>Heading for a new adventure?</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consectetur ea! Nostrum incidunt repudiandae quia iusto eius obcaecati laboriosam, ut id maiores consequuntur debitis quas dolorem adipisci dolor dicta similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus asperiores officiis aspernatur veritatis magnam delectus voluptatum tempore quod, vero beatae explicabo enim laudantium? Illum numquam quis nostrum suscipit harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error blanditiis expedita quos laborum nisi sapiente dolore fuga molestias. Repellendus porro incidunt at sit nostrum, adipisci nam molestias veniam perferendis!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi non nisi assumenda aspernatur, accusamus in amet obcaecati voluptatem possimus autem pariatur magnam. Reiciendis explicabo voluptate nisi blanditiis sapiente sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a dolores incidunt eaque, accusamus rerum ipsa sunt eum recusandae cupiditate soluta mollitia omnis, maxime distinctio doloribus. Nesciunt magnam laboriosam reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto explicabo quod, culpa aperiam voluptatibus enim natus, at sapiente dignissimos incidunt voluptatum tempore, ullam minima sed excepturi. Nisi, officia expedita. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam id dignissimos illo consectetur voluptate esse veniam, rerum ipsa, ipsum repellat. Est minima, ducimus mollitia nobis in vel voluptate adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati aliquam, numquam sit earum adipisci id animi nisi facilis, in dicta optio alias debitis illum eos quam quo error iusto! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores totam corrupti ratione veniam pariatur doloribus! Quasi veritatis est neque quibusdam earum! Totam ipsum sunt eligendi obcaecati quia nostrum! Tenetur, maiores.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti accusantium in tenetur quod, iusto quibusdam dolores facere voluptatum, officia sequi maxime recusandae cumque quidem, doloremque vel explicabo. Ex, accusantium. Ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam odit dolor commodi laudantium, optio distinctio repudiandae dolores quidem a minima exercitationem reprehenderit tenetur accusamus est aliquid et praesentium eos ullam.
+</div>
+
+<script>
+    let text = document.getElementsByID('text');
+    let btn = document.getElementsByID('btn');
+    let penhasco = document.getElementsByID('penhasco');
+    let floresta = document.getElementsByID('floresta');
+    let mar = document.getElementsByID('mar');
+    let header = document.getElementsByID('header');
+
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+
+        text.style.top = 50 + value * -0.5 + '%';
+        btn.style.marginTop = value * 1.5 + 'px';
+        penhasco.style.top = value * -0.12 + 'px';
+    })
+</script>
+
+</body>
+</html>
